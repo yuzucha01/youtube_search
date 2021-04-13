@@ -1,0 +1,51 @@
+body {
+  background-color: #e6e6e6;
+}
+.home {
+  text-align: center;
+}
+.home p {
+  margin: 0px 0px 30px 0px;
+  font-size: 20px;
+  border-bottom: 1px solid;
+}
+.main {
+  position: relative;
+  background-color: #dbdbdb;
+  padding: 30px;
+}
+.commons {
+  text-align: center;
+}
+#common input {
+  margin-top: 10px;
+  width: 300px;
+  height: 30px;
+}
+
+#common textarea {
+  width: 400px;
+  height: 100px;
+  margin: 10px;
+}
+
+/* submit */
+.button {
+  display: inline-block;
+  border-radius: 5%;
+  font-size: 13pt;
+  text-align: center;
+  cursor: pointer;
+  padding: 14px 30px;
+  background: rgba(81, 121, 89, 0.88);
+  color: #ffffff;
+  line-height: 1em;
+  transition: 0.3s;
+  box-shadow: 3px 3px 10px #666666;
+  border: 2px solid rgba(81, 121, 89, 0.88);
+}
+.button:hover {
+  box-shadow: none;
+  color: rgba(81, 121, 89, 0.88);
+  background: #ffffff;
+}
