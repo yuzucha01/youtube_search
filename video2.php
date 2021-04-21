@@ -6,7 +6,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 if (isset($_GET['q'])) {
 
   //youtubeのAPIkey
-  $DEVELOPER_KEY = 'XXXXXXXXXXX';
+  $DEVELOPER_KEY = 'AIzaSyBp_A1iisoTSfqm3vsveHuDSCV-EGTIFcg';
 
   $client = new Google_Client();
   $client->setDeveloperKey($DEVELOPER_KEY);
@@ -33,8 +33,8 @@ if (isset($_GET['q'])) {
     foreach ($searchResponse['items'] as $searchResult) {
       switch ($searchResult['id']['kind']) {
         case 'youtube#video':
-          $videos .= sprintf('<li>%s (%s)</li>',
-              $searchResult['snippet']['title'], $searchResult['id']['videoId']);
+          $videos .= sprintf('<ul> <li>%s<a href="https://www.youtube.com/watch?v=%s"></li> </ul>',
+              $searchResult['snippet']['title'], $searchResult['id']['videoId'], $searchResult['statistics']['viewCount']);
           break;
       }
     }
