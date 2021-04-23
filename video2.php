@@ -6,7 +6,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 if (isset($_GET['q'])) {
 
   //youtubeのAPIkey
-  $DEVELOPER_KEY = 'AIzaSyBp_A1iisoTSfqm3vsveHuDSCV-EGTIFcg';
+  $DEVELOPER_KEY = 'XXXXXXXXXXXXXXXXXXX';
 
   $client = new Google_Client();
   $client->setDeveloperKey($DEVELOPER_KEY);
